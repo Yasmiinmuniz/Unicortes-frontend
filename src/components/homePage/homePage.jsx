@@ -46,7 +46,7 @@ const HomePage = () => {
             <CardItem to="/productStock" icon={BsProductStock} title="Estoque" />
             <CardItem to="/products" icon={BsProduct} title="Produtos" />
             <CardItem to="/loyaltyCards" icon={BsLoyaltyCards} title="Cartões de Fidelidade" />
-            <CardItem to="/sales" icon={BsSales} title="Promoções" />
+            <CardItem to="/promotions" icon={BsSales} title="Promoções" />
             <CardItem to="/historys" icon={BsHistorys} title="Histórico de Agendamentos" />
           </>
         )}
@@ -64,6 +64,7 @@ const HomePage = () => {
         {userRole === "CLIENT" && (
           <>
             <CardItem to="/appointment" icon={BsAppointments} title="Agendar Serviços" />
+            <CardItem to="/historys" icon={BsHistorys} title="Histórico de Agendamentos"/>
           </>
         )}
       </div>
